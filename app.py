@@ -132,8 +132,9 @@ if st.button("🚀 Run Check"):
     
     st.subheader("📋 Results")
 
-    issues = 0
 
+if st.button("🚀 Run Check"):
+    issues = 0
     for r in results:
         if r['start'] is not None:
             timestamp = f"{format_time(r['start'])} - {format_time(r['end'])}"
@@ -153,5 +154,5 @@ if st.button("🚀 Run Check"):
             with st.expander(f"❌ ({r['score']}%) {timestamp}"):
                 st.write(r["sentence"])
 
-st.write(f"### ⚠️ Total Issues Found: {issues}")
+    st.write(f"### ⚠️ Total Issues Found: {issues}")
     
