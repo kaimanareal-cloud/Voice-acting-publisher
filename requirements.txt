@@ -5,4 +5,4 @@ torchaudio
 torchvision
 rapidfuzz
 pydub
-fitz
+PyMuPDF
