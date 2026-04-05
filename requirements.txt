@@ -1,5 +1,7 @@
-tempfile
-whisper
-scikit-learn
 streamlit
+openai-whisper
+torch
+torchaudio
+torchvision
 rapidfuzz
+pydub
