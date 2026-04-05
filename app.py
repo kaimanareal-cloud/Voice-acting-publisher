@@ -95,7 +95,7 @@ if audio_file:
 # Run Button
 # -----------------------------
 if st.button("🚀 Run Check"):
-
+    issues = 0
     if not pdf_file or not audio_file:
         st.warning("Please provide both book PDF and audio.")
         st.stop()
@@ -133,8 +133,7 @@ if st.button("🚀 Run Check"):
     st.subheader("📋 Results")
 
 
-if st.button("🚀 Run Check"):
-    issues = 0
+
     for r in results:
         if r['start'] is not None:
             timestamp = f"{format_time(r['start'])} - {format_time(r['end'])}"
