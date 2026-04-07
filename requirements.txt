@@ -6,3 +6,4 @@ torchvision
 rapidfuzz
 pydub
 PyMuPDF
+ffmpeg
